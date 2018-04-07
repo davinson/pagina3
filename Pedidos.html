@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es-ve">
+<head>
+<meta charset="utf-8">
+<title>Pedidos</title>
+<meta name="author" content="Davinson Garcia">
+<link href="ex2.css" rel="stylesheet">
+<link href="Pedidos.css" rel="stylesheet">
+</head>
+<body>
+<div id="Banner1"><span>Pedidos</span></div>
+<div id="wb_Text1">
+<span id="wb_uid0"><strong><em>Usted puede generar un pedido con nosotros mediante el siguiente formulario:</em></strong></span></div>
+<label for="" id="Label19" onclick="window.location.href='#';return false;">↑Top</label>
+<div id="wb_Form1">
+<form name="Pedido" method="post" action="mailto:yourname@address.com?subject=Nuevo Pedido" id="Form1" onsubmit="return ValidatePedido(this)">
+<select name="Asunto" size="1" id="Combobox1">
+<option selected value="Nuevo Pedido">Nuevo Pedido</option>
+</select>
+<label for="Editbox1" id="Label2">Nombre de usuario:</label>
+<input type="text" id="Editbox1" name="Nombre" value="" maxlength="15" spellcheck="false" placeholder="david123">
+<label for="Editbox2" id="Label3">Contraseña:</label>
+<input type="password" id="Editbox2" name="Contraseña" value="" maxlength="15" spellcheck="false">
+<label for="TextArea1" id="Label4">Dirección de envio:</label>
+<textarea name="Direccion" id="TextArea1" rows="4" cols="29" maxlength="100" spellcheck="false"></textarea>
+<label for="Editbox3" id="Label5">Telefóno:</label>
+<input type="number" id="Editbox3" name="Telefono" value="" maxlength="12" spellcheck="false" placeholder="04240000000 o 584241234567 ">
+<label for="Editbox4" id="Label6">Email:</label>
+<input type="text" id="Editbox4" name="email" value="" maxlength="30" spellcheck="false" placeholder="Pedroperez@gmail.com">
+<label for="Combobox2" id="Label7">Producto:</label>
+<select name="Producto" size="1" id="Combobox2">
+<option selected value="Ford Explorer">Ford Explorer</option>
+<option value="Ford Fiesta">Ford Fiesta</option>
+<option value="Ford Focus">Ford Focus</option>
+<option value="Ford Fusion">Ford Fusion</option>
+<option value="Ford Mustang">Ford Mustang</option>
+</select>
+<label for="Editbox5" id="Label8">Cantidad:</label>
+<input type="number" id="Editbox5" name="Cantidad" value="" maxlength="99" spellcheck="false" title="Cantidad" placeholder="1">
+<label for="" id="Label9">Forma de pago:</label>
+<label for="RadioButton1" id="Label10">Efectivo</label>
+<div id="wb_RadioButton1">
+<input type="radio" id="RadioButton1" name="q[2]" value="Efectivo" checked><label for="RadioButton1"></label></div>
+<label for="RadioButton2" id="Label11">Debito</label>
+<div id="wb_RadioButton2">
+<input type="radio" id="RadioButton2" name="q[2]" value="Debito"><label for="RadioButton2"></label></div>
+<label for="RadioButton3" id="Label12">Cheque</label>
+<div id="wb_RadioButton3">
+<input type="radio" id="RadioButton3" name="q[1]" value="Cheque"><label for="RadioButton3"></label></div>
+<label for="RadioButton4" id="Label13">Credito</label>
+<div id="wb_RadioButton4">
+<input type="radio" id="RadioButton4" name="q[2]" value="Credito"><label for="RadioButton4"></label></div>
+<label for="" id="Label14">Metodo de Envio:</label>
+<label for="RadioButton5" id="Label15">DHL</label>
+<div id="wb_RadioButton5">
+<input type="radio" id="RadioButton5" name="q[3]" value="on" checked><label for="RadioButton5"></label></div>
+<label for="RadioButton6" id="Label16">Tealca</label>
+<div id="wb_RadioButton6">
+<input type="radio" id="RadioButton6" name="q[3]" value="on"><label for="RadioButton6"></label></div>
+<label for="RadioButton7" id="Label17">Zoom</label>
+<div id="wb_RadioButton7">
+<input type="radio" id="RadioButton7" name="q[3]" value="on"><label for="RadioButton7"></label></div>
+<label for="RadioButton8" id="Label18">Mrw</label>
+<div id="wb_RadioButton8">
+<input type="radio" id="RadioButton8" name="q[3]" value="on"><label for="RadioButton8"></label></div>
+<label for="TextArea2" id="Label20">Comentarios:</label>
+<textarea name="comentario" id="TextArea2" rows="4" cols="29" maxlength="255" spellcheck="false"></textarea>
+<input type="submit" id="Button1" name="" value="Hacer pedido">
+<label for="Combobox1" id="Label1">Asunto:</label>
+</form>
+</div>
+<input type="button" id="Button2" onclick="window.location.href='./index.html';return false;" name="" value="Ir al menu principal">
+<footer id="PageFooter1">
+   <div id="wb_Text2">
+      <span id="wb_uid1"><br>Davinson Garcia 2018 Todos los derechos Reservados<br>Instituto&nbsp; Universitario Politecnico &quot;Santiago Mariño&quot;</span></div>
+</footer>
+<script language="JavaScript">
+alert("Has accedido al area de Pedidos");
+</script><script src="Pedidos.js"></script>
+</body>
+</html>
